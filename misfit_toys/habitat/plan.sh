@@ -1,8 +1,10 @@
 pkg_name=misfit_toys
 pkg_origin=core
 pkg_version="0.1.0"
-pkg_deps=(core/node core/coreutils core/nginx)
-pkg_build_deps=(core/git)
+pkg_deps=(core/node core/coreutils)
+pkg_build_deps=(core/git core/coreutils)
+pkg_svc_run="npm start"
+pkg_svc_user="root"
 
 do_download() {
   return 0
